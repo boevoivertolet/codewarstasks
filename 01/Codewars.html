@@ -29,9 +29,20 @@
                 return num;
             }
         }*/ //In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
-   /* function opposite(number) {
-        return -number
-    }*/// Very simple, given an integer or a floating-point number, find its opposite.
+    /* function opposite(number) {
+         return -number
+     }*/// Very simple, given an integer or a floating-point number, find its opposite.
+    function squareSum(numbers) {
+
+        let square = numbers.map(el => el * el)
+        let sum =0;
+        for(let i = 0; i<square.length; i++ ){
+            sum =sum+square[i]
+        }
+         return sum
+    }//Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+
 
 
 </script>
