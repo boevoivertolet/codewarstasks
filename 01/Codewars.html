@@ -65,7 +65,7 @@
         return s.toString().repeat(n);
     }
     */
-    function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
+    /*function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
         let inArray = [age1, age2, age3, age4, age5, age6, age7, age8]
         let resultByItself = inArray.map(a => a * a)
         let AddThemAll = resultByItself.map(a=> x+=a, x=0).reverse()[0]
@@ -74,7 +74,15 @@
     }
 
     let log = predictAge(65,60,75,55,60,63,64,45)
+    console.log(log)*/
+    function reverseList(arr) {
+        arr.reverse();
+        return arr;
+    }
+
+    let log = reverseList([1,2,3]);
     console.log(log)
+
 </script>
 
 </body>
