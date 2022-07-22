@@ -96,8 +96,7 @@
 
         console.log(playerRankUp(101))
     */
-
-    const isReallyNaN = (val) => {
+    /*const isReallyNaN = (val) => {
 
         if (isNaN(val) && val!== undefined && typeof val === "number") {
             return true
@@ -105,7 +104,22 @@
             return false
         }
     };
-    console.log(isReallyNaN());
+    console.log(isReallyNaN());*/
+
+    function getNewNotes(salary, bills) {
+        let billsSum= bills.map(i=>x+=i, x=0).reverse()[0]
+        let notes = Math.floor((salary - billsSum) / 5)
+        if(notes >=5 ){
+            return notes
+        }else{
+            return 0
+        }
+
+
+    }
+
+    console.log(getNewNotes(5300, [1190, 1010, 1045, 55, 10, 19, 55]),383)
+
 </script>
 
 </body>
