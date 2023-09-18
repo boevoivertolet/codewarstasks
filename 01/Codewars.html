@@ -119,7 +119,41 @@
 
         console.log(getNewNotes(5300, [1190, 1010, 1045, 55, 10, 19, 55]),383)*/
 
+    // Numbers ending with zeros are boring.
+    //
+    //     They might be fun in your world, but not here.
+    //
+    //     Get rid of them. Only the ending ones.
+    //
+    // 1450 -> 145
+    // 960000 -> 96
+    // 1050 -> 105
+    // -1050 -> -105
+    //
+    // Zero alone is fine, don't worry about it. Poor guy anyway
 
+
+    // function noBoringZeros(n) {
+    //     let str = n.toString()
+    //     for (let i = 0; i <= str.length - 1; i++) {
+    //         if (str[i] !== '0') {
+    //
+    //         }
+    //     }
+    //
+    //
+    // }
+    //
+    // noBoringZeros(55)
+
+    function pillars(numPill, dist, width) {
+        if(numPill <= 1) return dist = 0
+        dist = dist * 100
+        dist = dist * (numPill - 1)
+        width = width * (numPill - 2)
+        dist = width + dist
+        return dist
+    }
 
 
 </script>
