@@ -146,13 +146,25 @@
     //
     // noBoringZeros(55)
 
-    function pillars(numPill, dist, width) {
-        if(numPill <= 1) return dist = 0
-        dist = dist * 100
-        dist = dist * (numPill - 1)
-        width = width * (numPill - 2)
-        dist = width + dist
-        return dist
+    // function pillars(numPill, dist, width) {
+    //     if(numPill <= 1) return dist = 0
+    //     dist = dist * 100
+    //     dist = dist * (numPill - 1)
+    //     width = width * (numPill - 2)
+    //     dist = width + dist
+    //     return dist
+    // }
+
+    function factors(x) {
+        if (x <= 0 || x % 1 !== 0) return -1
+        let arr = []
+        for (let i = 1; i <= x; i++) {
+            if (x % i === 0) {
+                arr.unshift(i)
+
+            }
+        }
+        return arr
     }
 
 
