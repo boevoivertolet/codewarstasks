@@ -176,10 +176,18 @@
     //    return n**3
     // }
 
-    function digitize(n) {
-        let arr = [...n.toString()].map(Number)
-        return arr.reverse()
-    }
+    // function digitize(n) {
+    //     let arr = [...n.toString()].map(Number)
+    //     return arr.reverse()
+    // }
+
+    const binaryArrayToNumber = arr => {
+        let binaryString = arr.join('')
+        return parseInt(binaryString, 2)
+    };
+
+
+
 </script>
 
 </body>
