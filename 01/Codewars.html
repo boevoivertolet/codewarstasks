@@ -186,12 +186,20 @@
     //     return parseInt(binaryString, 2)
     // };
 
-    function findNeedle(haystack) {
-        let element = 'needle'
-        let index = haystack.indexOf(element)
-        return `found the needle at position ${index}`
-    }
+    // function findNeedle(haystack) {
+    //     let element = 'needle'
+    //     let index = haystack.indexOf(element)
+    //     return `found the needle at position ${index}`
+    // }
 
+    function findAverage(array) {
+        if (!array.length) return 0;
+        let arraySum = 0
+        for (let i = 0; i < array.length; i++) {
+            arraySum += array[i]
+        }
+        return arraySum / array.length
+    }
 
 </script>
 
