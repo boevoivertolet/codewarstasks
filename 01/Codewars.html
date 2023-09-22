@@ -181,11 +181,16 @@
     //     return arr.reverse()
     // }
 
-    const binaryArrayToNumber = arr => {
-        let binaryString = arr.join('')
-        return parseInt(binaryString, 2)
-    };
+    // const binaryArrayToNumber = arr => {
+    //     let binaryString = arr.join('')
+    //     return parseInt(binaryString, 2)
+    // };
 
+    function findNeedle(haystack) {
+        let element = 'needle'
+        let index = haystack.indexOf(element)
+        return `found the needle at position ${index}`
+    }
 
 
 </script>
