@@ -201,13 +201,23 @@
     //     return arraySum / array.length
     // }
 
-    function oddOrEven(array) {
-        if (array.length === 0) array = [0]
-        let sum = 0
-        for (let i = 0; i < array.length; i++) {
-            sum += array[i]
+    // function oddOrEven(array) {
+    //     if (array.length === 0) array = [0]
+    //     let sum = 0
+    //     for (let i = 0; i < array.length; i++) {
+    //         sum += array[i]
+    //     }
+    //     return Math.abs(sum) % 2 === 1 ? 'odd' : 'even'
+    // }
+
+    function countSheeps(sheep) {
+        let sumSheeps = 0
+        for (let i = 0; i < sheep.length; i++) {
+            if (sheep[i]) {
+                sumSheeps += sheep[i]
+            }
         }
-        return Math.abs(sum) % 2 === 1 ? 'odd' : 'even'
+        return sumSheeps
     }
 </script>
 
